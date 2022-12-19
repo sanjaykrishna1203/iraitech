@@ -1,0 +1,10 @@
+
+    <div class="p-5">
+    <button type="button" (click)="add()" class="btn btn-primary m-1">Add Another Phone</button>
+    <div class="form-group p-1" *ngFor="let item of phoneArray; let i = index">
+      <label for="index">Phone</label>
+      <input type="number" class="form-control" id="{{item.id}}" name="phoneNumber{{item.id}}" [(ngModel)]="item.phone" placeholder="Enter Phone Number">
+      <button *ngIf="phoneArray.length > 1" type="submit" (click)="remove(i)" class="btn btn-danger m-1">Remove</button>
+    </div>
+    <button type="submit" (click)="print()" class="btn btn-primary m-1">Submit</button>
+</div>

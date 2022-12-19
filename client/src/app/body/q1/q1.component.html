@@ -1,0 +1,10 @@
+<div style="width: 60%;" class="p-5">
+    <div class="form-group p-1">
+      <label for="index">Index</label>
+      <input type="number" class="form-control" id="index" [(ngModel)]="index" placeholder="Enter Index">
+    </div>
+    <button type="submit" (click)="out()" class="btn btn-primary m-1">Submit</button>
+
+  <h1>The Element in the index is:</h1><br>
+  <h3>{{res}}</h3>
+</div>

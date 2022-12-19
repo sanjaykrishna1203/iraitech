@@ -1,0 +1,6 @@
+<div class="p-5">
+<button type="button" class="btn btn-primary m-3" (click)="add()">Add X</button>
+<div *ngFor="let i of xArray">
+    <app-x [Id]="i"> </app-x>
+</div>
+</div>
