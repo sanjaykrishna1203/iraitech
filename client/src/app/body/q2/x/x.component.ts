@@ -7,16 +7,17 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class XComponent implements OnInit {
 
-  @Input("Id") id?: number; 
+  @Input("Id") id: number = 0; 
   yArray: number[] = [];
   constructor() { }
 
   ngOnInit(): void {
     console.log(this.id)
     this.yArray.push(1);
+    console.log(this.yArray)
   }
   add(){
-    this.yArray.push(this.yArray.length);
+    this.yArray.push(this.yArray.length + 1);
   }
 
 }

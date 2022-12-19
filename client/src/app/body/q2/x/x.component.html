@@ -1,7 +1,6 @@
 <div style="border: 1px solid black; padding: 10px; margin: 5px;">
 
-<button type="button" class="btn btn-primary" (click)="add()">Add y</button>
-
+<button type="button" class="btn btn-primary" (click)="add()">Add y</button>{{id}}
 <div *ngFor="let i of yArray">
     <app-y [Yid]="i" [Xid]="id"> </app-y>
 </div>

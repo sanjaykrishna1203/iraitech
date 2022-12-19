@@ -15,7 +15,7 @@ export class Q2Component implements OnInit {
     console.log(this.xArray);
   }
   add(){
-    this.xArray.push(this.xArray.length);
+    this.xArray.push(this.xArray.length + 1);
     console.log(this.xArray);
     
   }

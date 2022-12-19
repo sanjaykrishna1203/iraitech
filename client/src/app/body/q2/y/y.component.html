@@ -1,10 +1,8 @@
 
 <div style="width: 60%;" class="p-5">
     <div class="form-group p-1">
-      <label for="index">Name</label>
+      <label for="index">Name</label>{{yId}}
       <input type="text" class="form-control" id="index" [(ngModel)]="name" placeholder="Enter name">
     </div>
     <button type="submit" (click)="save()" class="btn btn-primary m-1">Submit</button>
-
- 
 </div>
